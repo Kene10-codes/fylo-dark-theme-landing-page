@@ -79,8 +79,7 @@ nav .menu-btn {
 }
 
 .intro-container img {
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     height: 420px;
     object-fit: contain;
 }
@@ -187,6 +186,7 @@ nav .menu-btn {
 
 .productivity-container img {
     height: auto;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -462,6 +462,13 @@ nav .menu-btn {
        align-items: center;
        justify-content: space-around;
        flex-direction: column;
+    }
+
+    .footer-container .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: left !important;
+        align-items: left !important;
     }
     
     .footer-container .social-icons  {
