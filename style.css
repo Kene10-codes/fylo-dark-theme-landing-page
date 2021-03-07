@@ -377,7 +377,7 @@ nav .menu-btn {
         user-select: none;
     }
     nav .menu-icon .nav-icon {
-        background-color: #333;
+        background-color: hsl(0, 0%, 100%);
         display: block;
         height: 2px;
         position: relative;
@@ -386,7 +386,7 @@ nav .menu-btn {
     }
     nav .menu-icon .nav-icon::before,
     nav .menu-icon .nav-icon::after {
-        background-color: #333;
+        background-color: hsl(0, 0%, 100%);
         content: '';
         display: block;
         height: 100%;
@@ -423,10 +423,33 @@ nav .menu-btn {
 
  }
 
- @media (max-width: 375px) {
-    .intro-text h2 {
-        font-size: 0.1rem;
-        letter-spacing: 0.02rem;
+ @media (max-width: 900px) {
+    .intro-text h2, 
+    .productivity-container h2 {
+        font-size: 1.3rem;
+        letter-spacing: 0.01rem;
+        line-height: 25px;
+        text-align: center;
        
     }
+
+    .offers-card, .productivity-container,
+    .testimonial-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .offers-card .card-image{
+        flex: 100%;
+    }
+
+    .testimonial-container .card {
+        padding: 15px 20px;
+        margin-bottom: 30px;
+    }
+    .testimonial-container .card:last-child {
+        margin-bottom: 150px;
+    }
+
  }
