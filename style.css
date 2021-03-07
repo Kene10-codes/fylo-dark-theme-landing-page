@@ -87,34 +87,37 @@ nav ul li a:hover {
 
 .intro-text h2,
 .offers-card h2,
-.productivity-container h2 {
+.productivity-container h2,
+.email h2 {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 1.7rem;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.06rem;
 }
-.intro-text p,
-.offers-card p,
+.intro-text p, .offers-card p,
 .productivity-container p,
-.testimonial-container p {
+.testimonial-container p,
+.email p, .footer-container p {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
     line-height: 20px;
     font-size: 0.75rem;
 }
 
-.intro-container button {
+.intro-container button,
+.email form input + #submit {
     color: hsl(0, 0%, 100%);
     background: hsl(198, 60%, 50%);
     font-size: 0.875rem;
     padding: 10px;
     border-radius: 25px;
     width: 180px;
-    height: 43px;
+    height: 40px;
     outline: none;
     border: none;
     font-weight: 700;
+    font-family: 'Raleway', sans-serif;
 }
 
 .intro-container button:hover{
@@ -133,7 +136,7 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.offers-card {
+.offers-card{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -160,8 +163,7 @@ nav ul li a:hover {
 
 /* productivity section */
 
-#productivity, #testimonial,
-#email {
+#productivity, #testimonial {
     background: hsl(217, 28%, 15%);
 }
 
@@ -180,7 +182,8 @@ nav ul li a:hover {
 
 /* testimonial section */
 
-.testimonial-container {
+.testimonial-container,
+.footer-container  {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -208,6 +211,47 @@ nav ul li a:hover {
     color: hsl(0, 0%, 100%);
     font-size: 0.75rem;
     margin: 0;
+}
+
+/* email section */
+
+#email {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.email {
+     text-align: center;
+     background: hsl(219, 30%, 18%);
+     width: 700px;
+}
+
+.email .form {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+}
+
+.email form input {
+    text-align: center;
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    background: hsl(0, 0%, 100%);
+    color: gray;
+}
+
+/* footer */
+
+#footer {
+    background: hsl(216, 53%, 9%);
+}
+
+.footer-container table tr td a{
+    color: hsl(0, 0%, 100%);
 }
 .attribution { 
     font-size: 11px; 
