@@ -202,22 +202,41 @@ nav .menu-btn {
 .testimonial-container,
 .footer-container  {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 100px;
+    position: relative;
+    
+}
+
+.testimonial-container .quote-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .testimonial-container .card {
     width: 350px;
-    height: 250px;
+    height: 200px;
     background: hsl(219, 30%, 18%);
     border-radius: 6px;
     padding: 20px;
 }
 .testimonial-container .card img {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 35px;
+    height: 35px;
+}
+
+.testimonial-container .card .info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.testimonial-container .card .info h3, h4 {
+    padding-left: 12px;
 }
 
 .testimonial-container .card > div  {
