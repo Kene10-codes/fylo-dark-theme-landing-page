@@ -95,7 +95,7 @@ nav .menu-btn {
 .intro-text h2,
 .offers-card h2,
 .productivity-container h2,
-.email h2 {
+.email-container h2 {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 1.7rem;
@@ -107,7 +107,7 @@ nav .menu-btn {
 .intro-text p, .offers-card p,
 .productivity-container p,
 .testimonial-container p,
-.email p, .footer-container p {
+.email-container p, .footer-container p {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
     line-height: 20px;
@@ -115,14 +115,14 @@ nav .menu-btn {
 }
 
 .intro-container button,
-.email form input + #submit {
+.email-container form input + #submit {
     color: hsl(0, 0%, 100%);
     background: hsl(198, 60%, 50%);
     font-size: 0.875rem;
     padding: 10px;
     border-radius: 25px;
     width: 180px;
-    height: 40px;
+    height: 35px;
     outline: none;
     border: none;
     font-weight: 700;
@@ -199,14 +199,12 @@ nav .menu-btn {
 
 /* testimonial section */
 
-.testimonial-container,
-.footer-container  {
+.testimonial-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 100px;
     position: relative;
-    
 }
 
 .testimonial-container .quote-sign {
@@ -217,10 +215,10 @@ nav .menu-btn {
 
 .testimonial-container .card {
     width: 350px;
-    height: 200px;
+    height: 190px;
     background: hsl(219, 30%, 18%);
     border-radius: 6px;
-    padding: 20px;
+    padding: 15px 20px;
 }
 .testimonial-container .card img {
     border-radius: 50%;
@@ -236,7 +234,8 @@ nav .menu-btn {
 }
 
 .testimonial-container .card .info h3, h4 {
-    padding-left: 12px;
+    padding-left: 10px;
+    font-size: 0.625rem;
 }
 
 .testimonial-container .card > div  {
@@ -254,42 +253,64 @@ nav .menu-btn {
 
 #email {
     margin: 0;
-    display: flex;
+    background-color: hsl(217, 28%, 15%);
     justify-content: center;
     align-items: center;
-    background-color: hsl(217, 28%, 15%);
+    position: relative;
 }
 
-.email {
-     text-align: center;
-     background: hsl(219, 30%, 18%);
-     width: 700px;
-}
-
-.email .form {
-   display: flex;
-   flex-wrap: nowrap;
-   flex-direction: row;
-}
-
-.email form input[type="email"]{
+.email-container {
     text-align: center;
-    border-radius: 10px;
-    width: 350px;
-    height: 40px;
+    background: hsl(219, 30%, 18%);
+    max-width: 700px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* revisit this */
+    margin: 40px 0;
+}
+
+.email-container .form {
+     display: flex;
+     flex-direction: column !important;
+     justify-content: center;
+     align-items: center;
+}
+.email-container form input[type="email"]{
+    text-align: left;
+    border-radius: 20px;
+    width: 340px;
+    height: 35px;
     outline: none;
     border: none;
     background: hsl(0, 0%, 100%) !important;
 }
-.email form input[type="email"]::placeholder {
+.email-container form input[type="email"]::placeholder {
     color: gray;
+    padding: 5px;
 }
 
 /* footer */
 
 #footer {
     background: hsl(216, 53%, 9%);
+    padding: 200px 100px 100px 100px;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container span {
+    margin-right: 2px;
+    padding-right: 10px;
+}
+
+
 
 .footer-container table tr td a{
     color: hsl(0, 0%, 100%);
