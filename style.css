@@ -80,8 +80,8 @@ nav .menu-btn {
 
 .intro-container img {
     width: 100%;
-    height: 420px;
-    object-fit: contain;
+    height: auto;
+    object-fit: cover;
 }
 
 .intro-text {
@@ -346,6 +346,11 @@ nav .menu-btn {
     color: hsl(228, 45%, 44%);
  }
 
+ @media (max-width: 1140px) {
+    .offers-card .card-image{
+        flex: 100%;
+    }
+ }
 
  @media (max-width: 900px) {
     .menu {
@@ -428,13 +433,14 @@ nav .menu-btn {
         line-height: 25px;
         text-align: center;
     }
-
+    .intro-container,
     .offers-card, .productivity-container,
     .testimonial-container, 
     .testimonial-container .form {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        padding: 50px 25px;
     }
 
     .offers-card .card-image{
