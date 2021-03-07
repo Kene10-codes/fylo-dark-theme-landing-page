@@ -20,6 +20,8 @@ a {
     text-decoration: none;
 }
 
+/* main css */
+
 #main {
     width: 100%;
     height: 100vh;
@@ -49,7 +51,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 45px;
     padding: 0 20px;
     color:hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
@@ -63,17 +65,22 @@ nav ul li a:hover {
     transition: all ease .3s;
 }
 
+nav .menu-btn {
+    display: none;
+}
+
 .intro-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 0 0;
+    padding: 100px;
 }
 
 .intro-container img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    max-width: 100%;
+    height: 420px;
     object-fit: contain;
 }
 
@@ -82,7 +89,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;  
 }
 
 .intro-text h2,
@@ -94,6 +101,8 @@ nav ul li a:hover {
     font-size: 1.7rem;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.06rem;
+    margin: 0;
+    padding: 12px 0 10px 0;
 }
 .intro-text p, .offers-card p,
 .productivity-container p,
@@ -143,22 +152,23 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 100px;
 }
 
-.offers-card .card-image-1 {
+.offers-card .card-image{
     flex: 50%;
+    padding-bottom: 50px;
 }
 
-.offers-card .card-image-2 {
-    flex: 50%;
-}
+.offers-card h3 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.06rem;
+    margin: 0;
+    padding: 4px 0 0 0;
 
-.offers-card .card-image-3 {
-    flex: 50%;
-}
-
-.offers-card .card-image-4 {
-    flex: 50%;
 }
 
 /* productivity section */
@@ -169,14 +179,21 @@ nav ul li a:hover {
 
 .productivity-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 100px;
+}
+
+.productivity-container img {
+    height: auto;
+    object-fit: contain;
 }
 
 .productivity-container  a {
     color: hsl(176, 68%, 64%);
-    border-bottom: 2px solid hsl(176, 68%, 64%);
-    padding: 7px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding: 5px;
+    font-size: 0.875rem;
 }
 
 
@@ -187,6 +204,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 100px;
 }
 
 .testimonial-container .card {
@@ -355,4 +373,12 @@ nav ul li a:hover {
         display: block;
     }
 
+ }
+
+ @media (max-width: 375px) {
+    .intro-text h2 {
+        font-size: 0.1rem;
+        letter-spacing: 0.02rem;
+       
+    }
  }
