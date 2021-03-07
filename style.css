@@ -352,7 +352,6 @@ nav .menu-btn {
         position: absolute;
         top: 65px;
         left: 0;
-        border-bottom: 4px solid hsl(216, 53%, 9%);
         width: 100%;
         padding: 0;
         margin: 0;
@@ -421,20 +420,17 @@ nav .menu-btn {
         display: block;
     }
 
- }
-
- @media (max-width: 900px) {
     .intro-text h2, 
     .productivity-container h2 {
         font-size: 1.3rem;
         letter-spacing: 0.01rem;
         line-height: 25px;
         text-align: center;
-       
     }
 
     .offers-card, .productivity-container,
-    .testimonial-container {
+    .testimonial-container, 
+    .testimonial-container .form {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -452,4 +448,35 @@ nav .menu-btn {
         margin-bottom: 150px;
     }
 
+    .testimonial-container form input {
+        width: 100%;
+    }
+
+    .email-container form input[type="email"],
+    .email-container form input + #submit {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .footer-container {
+       align-items: center;
+       justify-content: space-around;
+       flex-direction: column;
+    }
+    
+    .footer-container .social-icons  {
+        margin: 20px 0;
+        padding: 100px 0 0 0;
+    }
+
+    .footer-container .social-icons a:nth-child(2) {
+        margin: 0 15px;
+    }
+
  }
+
+
+   
+
+
+ 
