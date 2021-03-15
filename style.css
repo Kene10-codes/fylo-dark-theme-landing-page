@@ -7,7 +7,6 @@ body {
     font-family: 700;
     margin: 0;
     padding: 0;
-    
 }
 
 * {
@@ -52,8 +51,8 @@ nav ul li a{
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 700;
-    line-height: 45px;
-    padding: 0 20px;
+    line-height: 40px;
+    padding: 0 15px;
     color:hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
     margin: 3px;
@@ -75,7 +74,7 @@ nav .menu-btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 110px 0 0 0;
 }
 
 .intro-container img {
@@ -104,6 +103,7 @@ nav .menu-btn {
     margin: 0;
     padding: 12px 0 10px 0;
 }
+
 .intro-text p, .offers-card p,
 .productivity-container p,
 .testimonial-container p,
@@ -134,9 +134,7 @@ nav .menu-btn {
     border: 2px solid hsl(198, 60%, 50%);
 }
 
-
 /* offers section */
-
 #offers{
     background: hsl(217, 28%, 15%);
     background-image: url('/images/bg-curvy-desktop.svg');
@@ -353,6 +351,11 @@ nav .menu-btn {
  }
 
  @media (max-width: 900px) {
+    nav {
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
     .menu {
         display: none;
         position: absolute;
@@ -364,6 +367,10 @@ nav .menu-btn {
     }
     .menu li {
         width: 100%;
+    }
+    nav a img {
+        width: auto;
+        height: 30px;
     }
     nav .menu li a {
         width: 100%;
@@ -425,7 +432,9 @@ nav .menu-btn {
     nav .menu-btn:checked ~ .menu {
         display: block;
     }
-
+    .intro-container img {
+        min-width: 400px;
+    }
     .intro-text h2, 
     .productivity-container h2 {
         font-size: 1.3rem;
