@@ -453,7 +453,7 @@ nav .menu-btn {
         display: block;
     }
     .intro-container {
-        padding: 150px;
+        padding: 180px 50px 50px 50px;
     }
     .intro-container img {
         min-width: 360px;
@@ -494,7 +494,7 @@ nav .menu-btn {
         width: 100%;
     }
     .email-container {
-        width: 370px;
+        width: 360px;
         padding: 20px;
         position: absolute;
         margin: 30px 0;
