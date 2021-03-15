@@ -74,7 +74,7 @@ nav .menu-btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 110px 0 0 0;
+    padding: 85px 10px;
 }
 
 .intro-container img {
@@ -105,13 +105,14 @@ nav .menu-btn {
 }
 
 .intro-text p, .offers-card p,
-.productivity-container p,
 .testimonial-container p,
-.email-container p, .footer-container p {
+.email-container p {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
     line-height: 20px;
     font-size: 0.75rem;
+    text-align: center;
+    padding: 0 45px;
 }
 
 .intro-container button,
@@ -181,11 +182,15 @@ nav .menu-btn {
     align-items: center;
     padding: 100px;
 }
-
+.productivity-container p {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.063rem;
+    line-height: 20px;
+    font-size: 0.75rem;
+}
 .productivity-container img {
     height: auto;
     width: 100%;
-    max-width: 350px;
     object-fit: contain;
 }
 
@@ -207,12 +212,6 @@ nav .menu-btn {
     position: relative;
 }
 
-.testimonial-container .quote-sign {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .testimonial-container .card {
     width: 350px;
     height: 190px;
@@ -220,12 +219,19 @@ nav .menu-btn {
     border-radius: 6px;
     padding: 15px 20px;
 }
+.testimonial-container .card  p {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.063rem;
+    line-height: 20px;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 0;
+}
 .testimonial-container .card img {
     border-radius: 50%;
     width: 35px;
     height: 35px;
 }
-
 .testimonial-container .card .info {
     display: flex;
     justify-content: center;
@@ -268,7 +274,6 @@ nav .menu-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* revisit this */
     margin: 40px 0;
 }
 
@@ -276,7 +281,7 @@ nav .menu-btn {
      display: flex;
      flex-direction: column !important;
      justify-content: center;
-     align-items: center;
+     /* align-items: center; */
 }
 .email-container form input[type="email"]{
     text-align: left;
@@ -296,33 +301,41 @@ nav .menu-btn {
 
 #footer {
     background: hsl(216, 53%, 9%);
-    padding: 200px 100px 100px 100px;
+    padding: 200px 100px 20px 100px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.footer-container p {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.063rem;
+    line-height: 20px;
+    font-size: 0.75rem;
+    padding: 0 45px;
+}
+.footer-container .table-format {
+    display: flex;
+    flex-direction: row;
+}
+.footer-container .table-format ul {
+    list-style-type: none;
 }
 
+.footer-container .table-format ul li {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.875rem;;
+    padding: 5px 0;
+}
 .footer-container span {
     margin-right: 2px;
-    padding-right: 10px;
-}
-
-
-
-.footer-container table tr td a{
-    color: hsl(0, 0%, 100%);
-    font-size: 0.875rem;
-}
-.footer-container tr:first-child td {
-    padding-right: 15px;
+    padding-right: 8px;
 }
 .footer-container .social-icons  a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
-    padding: 3px 8px;
+    padding: 6px 10px;
     border-radius: 50%;
     border: 1px solid hsl(0, 0%, 100%);
 }
@@ -432,8 +445,11 @@ nav .menu-btn {
     nav .menu-btn:checked ~ .menu {
         display: block;
     }
+    .intro-container {
+        padding: 150px;
+    }
     .intro-container img {
-        min-width: 400px;
+        min-width: 360px;
     }
     .intro-text h2, 
     .productivity-container h2 {
@@ -451,7 +467,10 @@ nav .menu-btn {
         flex-direction: column;
         padding: 50px 25px;
     }
-
+    .productivity-container img {
+       min-width: 360px;
+    }
+    
     .offers-card .card-image{
         flex: 100%;
     }
@@ -467,17 +486,38 @@ nav .menu-btn {
     .testimonial-container form input {
         width: 100%;
     }
-
+    .email-container {
+        width: 400px;
+        padding: 20px;
+        position: absolute;
+        margin: 30px 0;
+    }
+    .email-container p {
+        padding: 0 10px;
+    }
     .email-container form input[type="email"],
     .email-container form input + #submit {
         width: 100%;
         margin-top: 15px;
     }
-
+    #footer {
+        background: hsl(216, 53%, 9%);
+        padding: 200px 20px 20px 10px;
+    }
     .footer-container {
-       align-items: center;
-       justify-content: space-around;
+       align-items: flex-start;
+       justify-content: flex-start;
        flex-direction: column;
+    }
+
+    #footer a img {
+        margin-bottom: 10px;
+        padding: 25px;
+
+    }
+    .footer-container .table-format {
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-container .contact {
@@ -488,12 +528,17 @@ nav .menu-btn {
     }
     
     .footer-container .social-icons  {
-        margin: 20px 0;
-        padding: 100px 0 0 0;
+        padding: 20px 0;
+        margin: 0 auto;
+        display: block;
     }
 
     .footer-container .social-icons a:nth-child(2) {
-        margin: 0 15px;
+        margin: 0 12px;
+    }
+    .attribution { 
+        font-size: 9px; 
+        text-align: center; 
     }
 
  }
