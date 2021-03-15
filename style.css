@@ -558,11 +558,11 @@ nav .menu-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 150px 10px 50px 10px;
+    padding: 150px 0 50px 0;
 }
 
 .intro-text h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.01rem;
     line-height: 25px;
     text-align: center;
@@ -571,6 +571,7 @@ nav .menu-btn {
     .testimonial-container p,
     .email-container p {
         padding: 0 20px;
+        text-align: center;
     }
  }
 
