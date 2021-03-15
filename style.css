@@ -104,7 +104,14 @@ nav .menu-btn {
     padding: 12px 0 10px 0;
 }
 
-.intro-text p, .offers-card p,
+.intro-text p {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 0.063rem;
+}
+.offers-card p,
 .testimonial-container p,
 .email-container p {
     color: hsl(0, 0%, 100%);
