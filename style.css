@@ -560,6 +560,13 @@ nav .menu-btn {
     transform: translate(-50%, -50%);
     padding: 150px 90px 50px 90px;
 }
+
+.intro-text h2 {
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    line-height: 25px;
+    text-align: center;
+}
     .offers-card p,
     .testimonial-container p,
     .email-container p {
