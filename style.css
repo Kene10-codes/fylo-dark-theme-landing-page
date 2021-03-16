@@ -215,8 +215,14 @@ nav .menu-btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 100px;
+    padding: 0 100px 150px 0;
     position: relative;
+}
+
+.testimonial-container .quote-sign {
+    position: absolute;
+    top: 0;
+    left: 40px;
 }
 
 .testimonial-container .card {
@@ -506,6 +512,9 @@ nav .menu-btn {
     .email-container form input + #submit {
         width: 100%;
         margin-top: 15px;
+    }
+    .testimonial-container .quote-sign {
+        display: none;
     }
     #footer {
         background: hsl(216, 53%, 9%);
