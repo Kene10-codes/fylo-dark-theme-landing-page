@@ -296,6 +296,18 @@ nav .menu-btn {
      justify-content: center;
      /* align-items: center; */
 }
+
+.email-container .form input:invalid {
+    border: 2px solid red;
+}
+
+.email-container .form input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+.email-container .form input:valid {
+    border: 2px solid green;
+}
 .email-container form input[type="email"]{
     text-align: left;
     border-radius: 20px;
