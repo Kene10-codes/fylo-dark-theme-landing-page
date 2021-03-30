@@ -193,7 +193,7 @@ nav .menu-btn {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
     line-height: 20px;
-    font-size: 0.75rem;
+    fontsent-notification-size: 0.75rem;
 }
 .productivity-container img {
     height: auto;
@@ -290,11 +290,14 @@ nav .menu-btn {
     margin: 40px 0;
 }
 
+.email-container h5 {
+    color: white;
+}
+
 .email-container .form {
      display: flex;
      flex-direction: column !important;
      justify-content: center;
-     /* align-items: center; */
 }
 
 .email-container .form input:invalid {
