@@ -189,6 +189,16 @@ nav .menu-btn {
     align-items: center;
     padding: 100px;
 }
+.productivity-container button {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding: 0 0 2px 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.875rem;
+    cursor: pointer;
+    outline: none;
+}
 .productivity-container p {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
@@ -199,13 +209,6 @@ nav .menu-btn {
     height: auto;
     width: 100%;
     object-fit: contain;
-}
-
-.productivity-container  a {
-    color: hsl(176, 68%, 64%);
-    border-bottom: 1px solid hsl(176, 68%, 64%);
-    padding: 5px;
-    font-size: 0.875rem;
 }
 
 
