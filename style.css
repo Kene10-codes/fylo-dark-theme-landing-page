@@ -574,9 +574,9 @@ nav .menu-btn {
 
  }
 
- @media (max-width: 699px) {
+ @media screen and (max-width: 719px) and (min-width: 600px){
     #offers {
-        padding: 350px 0 0 0;
+        padding: 260px 0 0 0;
     }
  }
 
