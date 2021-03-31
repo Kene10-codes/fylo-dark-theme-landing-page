@@ -178,10 +178,10 @@
     
       <div class="form" >
         <div class="d-none" id="msg_div" style="margin: 2% 0; border-radius: 15px; text-align: center; background: hsl(198, 60%, 50%); color: black; display: none">
-                    <span id="res_mess" style="color: white">Thanks for subscribing.</span>
+          <span id="res_mess" style="color: white">Thanks for subscribing.</span>
         </div>
         <form method="POST"  id="mailForm" action="javascript:void(0)">
-          <input type="email" id="email" name="email" placeholder="flyo@example.com" data-error="Email is required.">
+          <input type="email" id="email" name="email" placeholder="flyo@example.com">
           <button type="submit" name="submit" id="submit" value="Get Started For free">Get Started For free</button>
         </form>
       </div>
@@ -257,15 +257,6 @@ if ($("#mailForm").length > 0) {
 			   email: true,
 		   },    
    },
-   messages: {
-	 message: {
-	   required: "Please enter message",
-	 },
-	 email: {
-		 required: "Please enter valid email",
-		 email: "Please enter valid email",
-	   },     
-   },
    submitHandler: function(form) {
 	$.ajaxSetup({
 		 headers: {
@@ -288,7 +279,7 @@ if ($("#mailForm").length > 0) {
 		   $('#msg_div').show();
 		   },10000);
 	   }
-	
+    });
    }
  })
 }
