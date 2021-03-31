@@ -586,7 +586,10 @@ footer p {
  }
 
  @media (max-width: 375px) {
-
+nav {
+    justify-content: space-between;
+    padding: 0 15px;
+}
 .intro-container {
     display: block;
     position: absolute;
