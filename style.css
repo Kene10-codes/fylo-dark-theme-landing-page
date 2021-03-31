@@ -376,7 +376,9 @@ nav .menu-btn {
     font-size: 0.875rem;
     text-align: center;
 }
-
+footer p {
+    color: hsl(0, 0%, 100%);
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
