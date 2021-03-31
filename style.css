@@ -193,7 +193,7 @@ nav .menu-btn {
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.063rem;
     line-height: 20px;
-    fontsent-notification-size: 0.75rem;
+    font-size: 0.75rem;
 }
 .productivity-container img {
     height: auto;
@@ -572,6 +572,12 @@ nav .menu-btn {
         text-align: center; 
     }
 
+ }
+
+ @media (max-width: 699px) {
+    #offers {
+        padding: 350px 0 0 0;
+    }
  }
 
  @media (max-width: 375px) {
