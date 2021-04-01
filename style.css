@@ -322,6 +322,7 @@ nav .menu-btn {
     outline: none;
     border: none;
     background: hsl(0, 0%, 100%) !important;
+    padding: 6px;
 }
 .email-container form input[type="email"]::placeholder {
     color: gray;
