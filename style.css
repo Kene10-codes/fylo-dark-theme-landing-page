@@ -466,10 +466,12 @@ footer p {
     nav .menu-btn:checked ~ .menu-icon .nav-icon::before {
         transform: rotate(-45deg);
         top: 0;
+        background: hsl(198, 60%, 50%)
     }
     nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
         transform: rotate(45deg);
         top: 0;
+        background: hsl(198, 60%, 50%)
     }
 
     nav .menu-btn {

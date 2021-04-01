@@ -51,7 +51,7 @@
        Fylo stores all your most important files in one secure location. <br> Access them wherever 
        you need, share and collaborate with friends family, and co-workers.
      </p>
-     <button>Get Started</button>
+     <button type="button">Get Started</button>
     </div> 
   </div>
 </section>
